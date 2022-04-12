@@ -1,0 +1,224 @@
+body{
+    font-family: 'helvetica', 'sans-serif';
+    margin: 0;
+}
+
+/* Start: global style rules */
+a{
+    text-decoration: none;
+}
+
+/*End: global style rules*/
+
+/*Start: header styles*/
+header{
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 10px solid yellow;
+}
+
+.hamburger-menu{
+    background-color: transparent;
+    border: 1px solid yellow;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip{
+    display: block;
+    height: 1px;
+    background-color: yellow;
+    margin: 4px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0px 0 0;
+    text-align: left;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 2em;
+    margin: 0 50px ;
+}
+
+nav ul li a{
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+@media (max-width: 767px){
+    h4{
+        font-size: 1.2em;
+    }
+    .flex{
+        max-width: 540px;
+    }
+    nav ul{
+        display: none;
+        position: absolute;
+        top: 101%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid yellow;
+        margin: 0;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+    .hamburger-menu{
+        display: block;
+        margin-top: 2px;
+    }
+}
+
+
+
+/*Start: Main */
+main{
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 10px solid yellow;
+}
+
+.game-banners{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.game-banner-text h1{
+    font-size: 3em;
+    padding-left: 10px;
+    color: yellow;
+
+}
+
+.game-banner-text h5{
+    font-size: 1em;
+    padding: 10px;
+    padding-left: 30px;
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.game-banner-text{
+    background-image: url(../images/logo_1\ -\ Copy.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    padding: 40px;
+    font-size: 15px;
+    color: yellow;
+    font-weight: 400;
+    border: 5px solid yellow;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+    background-color: transparent;
+}
+
+.btn:hover{
+    box-shadow: 0 5px 50px 0 yellow inset, 0 5px 50px 0 yellow,
+                0 5px 50px 0 yellow inset, 0 5px 50px 0 yellow;
+    text-shadow: 0 0 5px yellow;
+}
+
+
+/*Start: footer styles*/
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+
+.social-items{
+    list-style: none;
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: yellow;
+}
+
+.social-items a:hover{
+    color: rgb(165, 165, 68);
+}
+
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+
+.quick-links ul{
+    display: flex;
+}
+
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.quick-items a:hover{
+    color: yellow;
+}
+
+.outer-footer{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #131313;
+}
